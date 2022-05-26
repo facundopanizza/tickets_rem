@@ -17,7 +17,7 @@ generator js {
 }
 
 model Category {
-  id Int @id @default(autoincrement())
+  id String @id @default(cuid())
   name String @unique
 
   createdAt DateTime @default(now())
